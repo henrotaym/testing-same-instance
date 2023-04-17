@@ -18,5 +18,5 @@ const props = defineProps<{
   name: string;
 }>();
 
-const { toasteo } = useToasteo();
+const toasteo = useToasteo();
 </script>

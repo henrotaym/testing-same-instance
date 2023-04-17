@@ -1,11 +1,7 @@
 import { reactive } from "vue";
 import ToastContainer from "../toasteo";
 
-const container = reactive(new ToastContainer());
-console.log("container created");
+const container = new ToastContainer();
 
-const useToasteo = () => {
-  console.log("useToasteo started");
-  return { toasteo: container };
-};
+const useToasteo = () => reactive(container);
 export default useToasteo;

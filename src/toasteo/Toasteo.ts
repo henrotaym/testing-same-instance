@@ -4,8 +4,9 @@ class Toasteo {
   private _toasts: Toast[] = [];
 
   public addToast(title: string) {
+    console.log("pushing toast");
     const toast = new Toast(title);
-    this._toasts.push(toast);
+    this._toasts = [...this._toasts, toast];
   }
 
   public get toasts() {
