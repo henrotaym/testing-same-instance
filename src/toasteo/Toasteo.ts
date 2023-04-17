@@ -1,16 +1,25 @@
+import { v4 } from "uuid";
 import Toast from "./Toast";
 
 class Toasteo {
-  private _toasts: Toast[] = [];
+  public toasts: Toast[];
+  public name: string;
+
+  public constructor() {
+    console.log("constructing toasteo");
+    this.toasts = [];
+    this.name = v4();
+  }
 
   public addToast(title: string) {
     console.log("pushing toast");
     const toast = new Toast(title);
-    this._toasts = [...this._toasts, toast];
+    this.toasts.push(toast);
   }
 
-  public get toasts() {
-    return this._toasts;
+  public randomName() {
+    this.name = v4();
+    console.log("random");
   }
 }
 
