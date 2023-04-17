@@ -1,15 +1,18 @@
 <script setup lang="ts">
 import { useToasteo } from "../composables";
 const props = defineProps<{
-  name: string
-}>()
+  name: string;
+}>();
 
 const toasteo = useToasteo();
 </script>
 
 <template>
   <div>
-    <div>Toasteo container is named "{{ name }}" and contains {{ toasteo.toasts.length }} toasts</div>
+    <div>
+      Toasteo container is named "{{ name }}" and contains
+      {{ toasteo.toasts.length }} toasts
+    </div>
     <ul>
       <li v-for="toast in toasteo.toasts" :key="toast.uuid">
         {{ toast.title }}
