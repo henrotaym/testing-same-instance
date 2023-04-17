@@ -1,6 +1,6 @@
 {
   "name": "@henrotaym/testing-same-instance",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "testing same instance.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
