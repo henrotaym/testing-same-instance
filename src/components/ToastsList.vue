@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import { useToasteo } from "../composables";
-const props = defineProps<{
-  name: string;
-}>();
-
-const toasteo = useToasteo();
-</script>
-
 <template>
   <div>
     <div>
@@ -20,3 +11,12 @@ const toasteo = useToasteo();
     </ul>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useToasteo } from "../composables";
+const props = defineProps<{
+  name: string
+}>();
+
+const toasteo = useToasteo();
+</script>
