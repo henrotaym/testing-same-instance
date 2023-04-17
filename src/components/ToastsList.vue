@@ -15,7 +15,7 @@
 <script setup lang="ts">
 import { useToasteo } from "../composables";
 const props = defineProps<{
-  name: string
+  name: string;
 }>();
 
 const toasteo = useToasteo();
