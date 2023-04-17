@@ -1,4 +1,3 @@
-import { v4 } from "uuid";
 import Toast from "./Toast";
 
 class Toasteo {
@@ -8,7 +7,7 @@ class Toasteo {
   public constructor() {
     console.log("constructing toasteo");
     this.toasts = [];
-    this.name = v4();
+    this.name = Math.floor(Math.random() * 100).toFixed();
   }
 
   public addToast(title: string) {
@@ -18,7 +17,7 @@ class Toasteo {
   }
 
   public randomName() {
-    this.name = v4();
+    this.name = Math.floor(Math.random() * 100).toFixed();
     console.log("random");
   }
 }
