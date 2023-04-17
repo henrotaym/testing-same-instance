@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      Toasteo container is named "{{ toasteo.randomName }}" and contains
+      Toasteo container is named "{{ toasteo.name }}" and contains
       {{ toasteo.toasts.length }} toasts
     </div>
     <ul>
